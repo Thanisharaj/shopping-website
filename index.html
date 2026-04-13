@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ShopPro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>ShopPro 🛒</h1>
+  <input type="text" id="search" placeholder="Search products..." onkeyup="searchProduct()">
+  <button onclick="openCart()">Cart (<span id="count">0</span>)</button>
+</header>
+<p> 
+Welcome to ShopPro, your one-stop online store for all your shopping needs! Explore our wide range of products, from electronics to fashion, and enjoy a seamless shopping experience. Use the search bar to find your favorite items quickly, and don't forget to check out your cart for the best deals!
+</p>
+
+<section id="products" class="products"></section>
+
+<!-- Cart -->
+<div id="cart" class="cart">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <h3>Total: ₹<span id="total">0</span></h3>
+  <button onclick="closeCart()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
